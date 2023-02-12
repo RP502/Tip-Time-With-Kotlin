@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtCost"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cost of Service"
+
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How was the service?" />
+
+    <RadioGroup
+        android:id="@+id/tip_Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdaAmazing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amazing (20%)" />
+
+        <RadioButton
+            android:id="@+id/rdaGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good (18%)" />
+
+        <RadioButton
+            android:id="@+id/rdaOkay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Okay (15%)" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/swRoundTip"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:checked="true"
+        android:text="Round up tip?" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CALCULATE" />
+
+    <TextView
+        android:id="@+id/txtTipAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Tip Amount" />
+
+</LinearLayout>
